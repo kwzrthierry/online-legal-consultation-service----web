@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../../fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../../fonts/poppins/Poppins-SemiBold.ttf");
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins-Regular";
+    position: relative;
+    background-image: url('../../img/2.jpg');
+    background-size: cover;
+}
+
+body::after {
+    content: '';
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo h2 {
+    color: #fff;
+    margin: 0;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 560px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #e6e6e6;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.nav-links li a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80vh;
+}
+
+.Messages {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 80vh;
+    overflow-y: auto;
+    flex-basis: 20%;
+}
+
+.Messages h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.lawyer {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.lawyer:hover {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.lawyer .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.lawyer .department {
+    font-size: 14px;
+    color: #666;
+}
+
+.chat {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 70vh;
+    overflow-y: auto;
+    flex-basis: 50%;
+}
+
+.chat-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.chat-header h2 {
+    color: #333;
+    font-size: 18px;
+    margin: 0;
+}
+
+.chat-messages {
+    height: 280px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.chat-input form{
+    margin-top: 20px;
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically */
+/*    width: 70%; /* Maintain the original width */*/
+}
+
+.chat-input textarea {
+    width: calc(100% - 100px); /* Take up remaining space */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: none;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    background-color: #075e54;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px; /* Add margin to separate from textarea */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.chat-input button:hover {
+    background-color: #054e44;
+}
+
+
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-copyright {
+    margin-top: 50px;
+    color: #ccc;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h3 {
+    text-align: center;
+}

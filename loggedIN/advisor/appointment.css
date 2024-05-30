@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../../fonts/poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("../../fonts/poppins/Poppins-SemiBold.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins-Regular";
+    position: relative;
+    background-image: url('../../img/2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::after {
+    content: '';
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo h2 {
+    color: #fff;
+    margin: 0;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 560px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #e6e6e6;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.nav-links li a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-copyright {
+    margin-top: 50px;
+    color: #ccc;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-family: "Poppins-SemiBold";
+}
+
+form input, form select {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: #1aa3ff;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #1aa3ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    align-self: center;
+}
+
+form button:hover {
+    background-color: #006bb3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #1aa3ff;
+    color: white;
+}
+
+table thead th {
+    padding: 10px;
+    text-align: left;
+    font-family: "Poppins-SemiBold";
+}
+
+table tbody tr {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+table tbody td {
+    padding: 10px;
+    text-align: left;
+    font-family: "Poppins-Regular";
+}
+
+#appointments-list {
+    list-style: none;
+    padding: 0;
+}
+
+#appointments-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background-color: #d32f2f;
+}

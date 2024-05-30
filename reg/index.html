@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet" href="../fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner" style="padding-bottom: 0px; padding-top: 0px;">
+            <!-- Registration Form -->
+            <form id="registrationForm" action="register.php" method="POST">
+                <h3>Registration Form</h3>
+                
+                <!-- First and Last Name Fields -->
+                <div class="form-group">
+                    <input type="text" name="firstname" placeholder="First Name" class="form-control" required>
+                    <input type="text" name="lastname" placeholder="Last Name" class="form-control" required>
+                </div>
+                
+                <!-- Birth Date Field -->
+                <div class="form-wrapper">
+                    <input type="date" name="birthDate" class="form-control" required>
+                    <i class="zmdi zmdi-calendar"></i>
+                </div>
+                
+                <!-- Email Field -->
+                <div class="form-wrapper">
+                    <input type="text" name="email" placeholder="Email Address" class="form-control" required>
+                    <i class="zmdi zmdi-email"></i>
+                    <span id="emailError" class="error"></span>
+                </div>
+                
+                <!-- Gender Selection -->
+                <div class="form-group">
+                    <select name="gender" id="" class="form-control">
+                        <option value="" disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+                </div>
+                
+                <!-- Username Field -->
+                <div class="form-wrapper">
+                    <input type="text" name="username" placeholder="Username" class="form-control" required>
+                    <i class="zmdi zmdi-account"></i>
+                    <span id="usernameError" class="error"></span>
+                </div>
+                
+                <!-- Password Field -->
+                <div class="form-wrapper">
+                    <input type="password" name="password" placeholder="Password" class="form-control" required>
+                    <i class="zmdi zmdi-lock"></i>
+                </div>
+                
+                <!-- Register Button -->
+                <button>Register
+                    <i class="zmdi zmdi-arrow-right"></i>
+                </button>
+                
+                <!-- Link to Login Page -->
+                <p style="padding: 10px; margin-top: 10px;">
+                    Already have an account? <a href="../login/home.html" style="text-decoration: none;">Log In</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
